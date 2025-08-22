@@ -21,7 +21,7 @@ a { text-decoration: none; }
 .box { 
     width: 250px; 
     height: 380px;
-    background: #ff0000;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 2px 10px 12px rgba(0, 0, 0, .5);
     display: flex;
