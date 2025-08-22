@@ -1,0 +1,61 @@
+body {
+  font-family: Roboto, sans-serif;
+}
+
+.carousel {
+  position: relative; /* penting buat efek fade */
+  overflow: hidden;
+  width: 100%;
+  object-fit: scale-down;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  transform: rotateY(180deg) rotateX(-20deg) translateY(-70px);
+  transform-style: preserve-3d;
+  perspective: 800px;
+  user-select: none;
+  cursor: grab;
+}
+
+/* Fade kiri-kanan */
+.carousel::before,
+.carousel::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  width: 400px; /* lebar area fade */
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.carousel::before {
+  left: 0;
+  background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.carousel::after {
+  right: 0;
+  background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+}
+
+.carousel-image {
+  background: transparent !important;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -100px 0 0 -100px;
+  width: 200px;
+  height: 200px;
+  transform: translate3d(0, 0, -10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-origin: 50% 50%;
+}
+
+@media (max-width: 600px) {
+  .carousel {
+    transform: rotateX(-10deg) scale(.6) translateY(-60px);
+  }
+}
