@@ -3,8 +3,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
     <title>Product Slider - Marvel Characters</title>
-<body>
-    <div class="container">
+
+    <div class="containerproduk ">
         <ul id="autoWidth" class="cs-hidden">
             <li class="item-a">
                 <div class="box">
@@ -82,9 +82,7 @@
                     <button class="view">view details</button>
                 </div>
             </li>
-
-        
     </div>
     <script src="{{ asset('js/produk.js') }}" defer></script>
-</body>
-</html>
+    
+

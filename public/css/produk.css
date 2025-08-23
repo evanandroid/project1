@@ -1,18 +1,16 @@
 ul { list-style: none; }
 a { text-decoration: none; }
 
-.cs-hidden {
-  visibility: hidden;
-}
 
 #autoWidth {
   width: 100%;
 }
 
-.container {
+.containerproduk {
     width: 100%;
+    margin-left: calc(50% - 50vw);
+    box-sizing: border-box;
     height: 90vh;
-    background: transparent;
     display: flex;
     justify-content: center;
     align-items: center;
