@@ -5,7 +5,7 @@
       
 <div class="flex-col">
     <div class="flex flex-row">
-        <h1 class="judul text-2xl font-bold tracking-tight text-gray-900">Produk Pilihan Minggu ini</h1>
+        <h1 class="judul text-2xl font-bold tracking-tight text-gray-900">Yang baru diskon minggu ini</h1>
         <button class="button1 text-sm text-blue-600">Lihat Semua ></button></div>
     <div class="containerproduk">
         <ul id="autoWidth" class="cs-hidden">
