@@ -1,6 +1,7 @@
 .slider-container {
     position: relative;
     overflow: hidden;
+    margin-block-end: 60px;
 }
 
 .slide {

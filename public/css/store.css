@@ -24,7 +24,6 @@
 }
 
 
-
 @media (max-width: 1024px) {
   .card-container {
     grid-template-columns: repeat(2, 1fr); /* Tablet: 2 kolom */
@@ -118,4 +117,23 @@
 .card:hover .character {
   opacity: 1;
   transform: translate3d(0%, -30%, 100px);
+}
+
+/* Center the last card if it's alone in the last row */
+.card-container > .card:last-child:nth-child(3n+1) {
+  grid-column: 2 / 3; /* Center in 3-column grid */
+}
+
+@media (max-width: 1024px) {
+  .card-container > .card:last-child:nth-child(2n+1) {
+    grid-column: 1 / -1; /* Center in 2-column grid */
+    justify-self: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .card-container > .card:last-child {
+    grid-column: 1 / -1; /* Only one column, so full width */
+    justify-self: center;
+  }
 }

@@ -5,7 +5,7 @@
         <div class=" flex items-center" >
           <div class="ml-15 shrink-0">
             <img src="{{ asset ('image/logobizponsel1.png') }}" alt="Logo Perusahaan" class="logobiz inline size-16 right-50"/>
-            <img src="{{ asset ('image/logobizponsel2.png') }}" alt="Logo Perusahaan" class="logobiz2 inline size-40 object-contain" /> 
+            <img src="{{ asset ('image/logobizponsel2.png') }}" alt="Logo Perusahaan" class="logobiz2 inline size-40 object-contain mt-3" /> 
           </div>
         </div>
           <div class="navigation md:block mr-10">

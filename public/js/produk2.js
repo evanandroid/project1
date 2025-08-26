@@ -1,5 +1,5 @@
 $(document).ready(function() {
-        $('#autoWidth').lightSlider({
+        $('#autoWidth2').lightSlider({
         autoWidth: true,      // biar lebar menyesuaikan isi
         loop: true,           // biar looping
         auto: true,           // bisa auto jalan
@@ -24,29 +24,7 @@ $(document).ready(function() {
             }
         ],
         onSliderLoad: function() {
-            $('#autoWidth').removeClass('cs-hidden');
+            $('#autoWidth2').removeClass('cs-hidden');
         }
     });  
-// ...existing code...
-$(document).ready(function() {
-    // ...existing LightSlider code...
-
-    // Show modal on view details click
-    $('#autoWidth').on('click', '.view', function(e) {
-        e.preventDefault();
-        $(this).closest('.box').siblings('.spec-modal').fadeIn(200);
-    });
-
-    // Hide modal on close
-    $('#autoWidth').on('click', '.close-spec', function() {
-        $(this).closest('.spec-modal').fadeOut(200);
-    });
-
-    // Optional: hide modal when clicking outside content
-    $('#autoWidth').on('click', '.spec-modal', function(e) {
-        if (e.target === this) {
-            $(this).fadeOut(200);
-        }
-    });
-});
 });
