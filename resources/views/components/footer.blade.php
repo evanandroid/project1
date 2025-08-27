@@ -1,29 +1,29 @@
-{{-- <link href="{{ asset('css/footer.css') }}" rel="stylesheet"> --}}
+
 <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-<footer class="position-relative footer sm:footer-horizontal bg-base-200 text-base-content p-10 bg-linear-360 from-indigo-500 to-white">
-  <nav>
-    <h6 class="footer-title text-black ">Services</h6>
-    <a class="link link-hover text-white ">Branding</a>
-    <a class="link link-hover text-white">Design</a>
-    <a class="link link-hover text-white">Marketing</a>
-    <a class="link link-hover text-white">Advertisement</a>
-  </nav>
-  <nav>
-    <h6 class="footer-title ">Company</h6>
-    <a class="link link-hover text-white">About us</a>
-    <a class="link link-hover text-white">Contact</a>
-    <a class="link link-hover text-white">Jobs</a>
-    <a class="link link-hover text-white">Press kit</a>
-  </nav>
-  <nav>
-    <h6 class="footer-title">Legal</h6>
-    <a class="link link-hover text-white">Terms of use</a>
-    <a class="link link-hover text-white">Privacy policy</a>
-    <a class="link link-hover text-white">Cookie policy</a>
-  </nav>
+<footer class="footer position-fixed sm:footer-horizontal text-base-content p-10 bg-indigo-500">
+    <nav>
+      <h6 class="footer-title text-black ">Services</h6>
+      <a class="link link-hover text-white ">Branding</a>
+      <a class="link link-hover text-white">Design</a>
+      <a class="link link-hover text-white">Marketing</a>
+      <a class="link link-hover text-white">Advertisement</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title ">Company</h6>
+      <a class="link link-hover text-white">About us</a>
+      <a class="link link-hover text-white">Contact</a>
+      <a class="link link-hover text-white">Jobs</a>
+      <a class="link link-hover text-white">Press kit</a>
+    </nav>
+    <nav>
+      <h6 class="footer-title">Legal</h6>
+      <a class="link link-hover text-white">Terms of use</a>
+      <a class="link link-hover text-white">Privacy policy</a>
+      <a class="link link-hover text-white">Cookie policy</a>
+    </nav>
 </footer>
-<footer class=" footer text-base-content border-base-300 border-t px-10 py-4 bg-indigo-500">
+<footer class=" footer2 text-base-content border-base-300 border-t px-10 py-4 bg-indigo-500">
   <aside class="grid-flow-col items-center ">
     <svg
       width="24"

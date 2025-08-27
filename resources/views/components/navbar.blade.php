@@ -3,13 +3,13 @@
     <div class=" max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-30 items-center justify-between">
         <div class=" flex items-center" >
-          <div class="ml-15 shrink-0">
+          <div class="ml-10 shrink-0">
             <img src="{{ asset ('image/logobizponsel1.png') }}" alt="Logo Perusahaan" class="logobiz inline size-16 right-50"/>
             <img src="{{ asset ('image/logobizponsel2.png') }}" alt="Logo Perusahaan" class="logobiz2 inline size-40 object-contain mt-3" /> 
           </div>
         </div>
           <div class="navigation md:block mr-10">
-            <div class="flex flex-row items-baseline space-x-3">  
+            <div class="flex flex-row items-baseline space-x-2">  
               <x-searchbar></x-searchbar>     
               <x-navlink href="/">Home</x-navlink>
               <a href="/about" class="{{ request()->is('about') ? 'bg-gray-900 text-white rounded-2xl px-3 py-2' : 'text-gray-300 hover:bg-gray-700 hover:text-white  rounded-2xl px-3 py-2' }} px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">About</a>
