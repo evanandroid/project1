@@ -1,3 +1,7 @@
+.containerproduk {
+    background-color: #09005f;
+    width: 100%;
+}
 .judul { margin-inline-start: 50px; margin-block-start: 20px; }
 ul { list-style: none; }
 a { text-decoration: none; }

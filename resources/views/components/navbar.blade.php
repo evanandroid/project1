@@ -1,8 +1,10 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
 <div>
-    <nav class="sticky top-0 z-50 bg-linear-180 from-indigo-500 to-white-300/0">
+    <nav class="navbar sticky top-0 z-50 bg-linear-180">
     <div class=" max-w-7xl px-4 sm:px-6 lg:px-8">
       <div class="flex h-30 items-center justify-between">
-        <div class=" flex items-center" >
+        <div class=" flex items-center">
           <div class="ml-10 shrink-0">
             <img src="{{ asset ('image/logobizponsel1.png') }}" alt="Logo Perusahaan" class="logobiz inline size-16 right-50"/>
             <img src="{{ asset ('image/logobizponsel2.png') }}" alt="Logo Perusahaan" class="logobiz2 inline size-40 object-contain mt-3" /> 
@@ -10,7 +12,7 @@
         </div>
           <div class="navigation md:block mr-10">
             <div class="flex flex-row items-baseline space-x-2">  
-              <x-searchbar></x-searchbar>     
+              <x-searchbar></x-searchbar>    
               <x-navlink href="/">Home</x-navlink>
               <a href="/about" class="{{ request()->is('about') ? 'bg-gray-900 text-white rounded-2xl px-3 py-2' : 'text-gray-300 hover:bg-gray-700 hover:text-white  rounded-2xl px-3 py-2' }} px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">About</a>
               <a href="/katalog" class="{{ request()->is('katalog') ? 'bg-gray-900 text-white rounded-2xl px-3 py-2' : 'text-gray-300 hover:bg-gray-700 hover:text-white rounded-2xl px-3 py-2' }} px-3 py-2 text-sm font-medium text-white hover:bg-gray-700 hover:text-white">Katalog</a>
@@ -19,12 +21,12 @@
             </div>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/SplitText.min.js"></script>
-        <script src="{{ asset('js/navigation.js') }}"></script> 
+        
           </div>
-       
+        
         <div class="-mr-2 flex md:hidden">
           <!-- Mobile menu button -->
-          <button type="button" command="--toggle" commandfor="mobile-menu" class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
+          <button type="button" id="mobile-menu-toggle" class="relative inline-flex items-center justify-center rounded-md bg-gray-800 p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
             <span class="absolute -inset-0.5"></span>
             <span class="sr-only">Open main menu</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 in-aria-expanded:hidden">
@@ -38,7 +40,7 @@
       </div>
     </div>
 
-    <el-disclosure id="mobile-menu" hidden class="block md:hidden">
+    <el-disclosure id="mobile-menu" class="block md:hidden">
       <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
         <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
         <a href="#" aria-current="page" class="block rounded-md bg-gray-900 px-3 py-2 text-base font-medium text-white">Dashboard</a>
@@ -59,3 +61,4 @@
     </el-disclosure>
   </nav> 
 </div>
+ <script src="{{ asset('js/navigation.js') }}"></script>

@@ -3,7 +3,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
       
-<div class="flex-col">
+<div class=" cotainer-produk flex-col">
     <div class="flex flex-row">
         <h1 class="judul text-2xl font-bold tracking-tight text-gray-900">Yang baru diskon minggu ini</h1>
         <button class="button1 text-sm text-blue-600">Lihat Semua ></button></div>
