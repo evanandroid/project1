@@ -1,5 +1,5 @@
 .navbar{
-  background: hsla(207, 100%, 50%, 0.998);
+  background: hsla(207, 100%, 65%, 0.998);
   height: 70px;
   color: #fff;
   margin: 20px;
@@ -26,10 +26,15 @@
   font-size: 1rem;
 }
 
-.nav-link:hover,
-.nav-link.active {
+.nav-link:hover {
   background: rgba(27, 27, 255, 0.998);
   color: #fff;
+}
+.nav-link.active {
+  background-color: #2563eb; /* Tailwind blue-600 */
+  color: white !important;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px; /* biar oval */
 }
 
 .kolom-navbar{

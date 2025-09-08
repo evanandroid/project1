@@ -1,13 +1,13 @@
 .containerproduk2 {
     position: relative;
-    background-color: hsla(207, 100%, 50%, 0.998);
+    background-color: hsla(207, 100%, 65%, 0.998);
     border-radius: 25px 25px 0px 0px;
     margin-inline: 20px;
 }
 
 .containerproduk3 {
     position: relative;
-    background-color: hsla(207, 100%, 50%, 0.998);
+    background-color: hsla(207, 100%, 65%, 0.998);
     border-radius: 0px 0px 25px 25px ;
     margin-inline: 20px;
 }

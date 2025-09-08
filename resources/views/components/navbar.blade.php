@@ -6,9 +6,10 @@
     <!-- Logo -->
     <div class="kolom-navbar nav-links hidden md:flex items-center space-x-2">
       <x-notification/>    
-      <a href="/" class="nav-link">Home</a>
-      <a href="/about" class="nav-link">About</a>
-      <a href="/katalog" class="nav-link">Katalog</a>      
+      <a href="/" class="nav-link {{ request()->is('/') ? 'active' : '' }}">Home</a>
+      <a href="/about" class="nav-link {{ request()->is('about') ? 'active' : '' }}">About</a>
+      <a href="/katalog" class="nav-link {{ request()->is('katalog') ? 'active' : '' }}">Katalog</a>
+     
     </div>
     
     <div class="logobiz ">
