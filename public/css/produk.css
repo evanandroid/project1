@@ -1,19 +1,28 @@
-.containerproduk {
-    background-color: #09005f;
-    width: 100%;
+.containerproduk2 {
+    position: relative;
+    background-color: hsla(207, 100%, 50%, 0.998);
+    border-radius: 25px 25px 0px 0px;
+    margin-inline: 20px;
 }
-.judul { margin-inline-start: 50px; margin-block-start: 20px; }
+
+.containerproduk3 {
+    position: relative;
+    background-color: hsla(207, 100%, 50%, 0.998);
+    border-radius: 0px 0px 25px 25px ;
+    margin-inline: 20px;
+}
+
+.judul { margin-block-start: 20px; position: relative; z-index: 1; }
 ul { list-style: none; }
 a { text-decoration: none; }
 
 .cs-hidden { visibility: hidden; }
 
-#autoWidth {
+#autoWidth1, #autoWidth2 {
   width: 100%;
 }
 
 .containerproduk {
-    width: auto;
     box-sizing: border-box;
     margin-top: 30px;
     margin-inline: 50px;
@@ -54,7 +63,7 @@ a { text-decoration: none; }
 .view { 
     width: 150px; 
     height: 40px; 
-    background: #32323E; 
+    background: rgba(27, 27, 255, 0.998); 
     color: #ffffff; 
     border-radius: 20px; 
     border: none; 
@@ -63,14 +72,14 @@ a { text-decoration: none; }
     cursor: pointer; 
     margin-top: 20px;
 }
-.view:hover { background-color: #0043b8; transition: all ease .3s;}
+.view:hover { background-color: hsla(207, 100%, 73%, 0.998); transition: all ease .3s;}
 
 .button1 { 
     width: 100px; 
-    height: 20px; 
-    background: #32323E; 
+    height: 30px; 
+    background: rgba(27, 27, 255, 0.998); 
     color: #ffffff; 
-    border-radius: 10px; 
+    border-radius: 25px; 
     border: none; 
     font-family: 'system-ui'; 
     font-size: 10px; 

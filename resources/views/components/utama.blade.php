@@ -9,7 +9,7 @@
 </head>
 <body>
 <main>
-<x-iklan1></x-iklan1>
+
 </main >
 </body>
 </html>

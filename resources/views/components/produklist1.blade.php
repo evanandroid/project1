@@ -3,12 +3,15 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
       
-<div class=" cotainer-produk flex-col">
-    <div class="flex flex-row">
-        <h1 class="judul text-2xl font-bold tracking-tight text-gray-900">Yang baru diskon minggu ini</h1>
-        <button class="button1 text-sm text-blue-600">Lihat Semua ></button></div>
+<div class=" containerproduk2 flex-col gap-1" >
+    <div class="flex justify-between mx-[50px]">
+        <div class="judul-confetti-wrapper" style="position:relative; display:block;">
+        <h1 class="judul text-2xl font-bold tracking-tight text-white">Yang baru diskon minggu ini</h1>
+        </div>
+        <button class="button1 text-sm text-blue-600">Lihat Semua ></button>
+    </div>
     <div class="containerproduk">
-        <ul id="autoWidth" class="cs-hidden">
+        <ul id="autoWidth1" class="cs-hidden">
             <li class="item-a">
                 <div class="box">
                     <div class="details">
@@ -31,7 +34,7 @@
         </ul>
         <button class="close-spec">Tutup</button>
     </div>
-</div>
+
             </li>
 
                         <li class="item-a">
@@ -100,7 +103,7 @@
                 </div>
             </li>
     </div>
-
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="{{ asset('js/produk.js') }}" defer></script>
 </div>
 

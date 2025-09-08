@@ -1,6 +1,6 @@
 <link rel="stylesheet" href="{{ asset('css/iklan1.css') }}">
 
-<div class= "slider-container flex flex-col items-center px-10 rounded-2xl">
+<div class= "slider-container flex flex-col items-center px-5 ">
     <div class= "slide active">
         <img src="{{ asset('image/iklan1.jpg') }}" alt="iklan1" class="h-full w-full object-cover rounded-2xl">
     </div>

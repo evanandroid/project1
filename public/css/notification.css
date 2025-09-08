@@ -1,12 +1,13 @@
 
 .notif {
-  background-color: #2e3445;
+  background-color: rgba(27, 27, 255, 0.998);
   border-radius: 25px;
   height: 40px;
   width: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 20px;
 }
 
 .btn {

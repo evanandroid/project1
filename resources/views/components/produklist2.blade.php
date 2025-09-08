@@ -3,9 +3,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/js/lightslider.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightslider/1.1.6/css/lightslider.min.css"/>
       
-<div class="flex-col">
-        <h1 class="judul text-2xl font-bold tracking-tight text-gray-900 flex-row">Produk Pilihan Bulan ini</h1>
-        <button class="button1 text-sm text-blue-600">Lihat Semua ></button></div>
+<div class=" containerproduk3 flex-col gap-1" >
+    <div class="flex justify-between mx-[50px]">
+        <div class="judul-confetti-wrapper" style="position:relative; display:inline-block;">
+        <h1 class="judul text-2xl font-bold tracking-tight text-white">produk pilihan bulan ini</h1>
+        </div>
+        <button class="button1 text-sm text-blue-600">Lihat Semua ></button>
+    </div>
     <div class="containerproduk">
         <ul id="autoWidth2" class="cs-hidden">
             <li class="item-a">
@@ -16,7 +20,21 @@
                     <img src="{{ asset('image/iphone16.png') }}" alt="hero image" class="model">
                     <p class="name">Iphone 16 Pro</p>
                     <button class="view">view details</button>
+
                 </div>
+                    <div class="spec-modal" style="display:none;">
+    <div class="spec-content">
+        <h2>Spesifikasi Iphone 16 Pro</h2>
+        <ul>
+            <li>Layar: 6.7" OLED</li>
+            <li>Chipset: A18 Bionic</li>
+            <li>Kamera: 48MP Triple</li>
+            <li>Baterai: 4500mAh</li>
+            <!-- Tambahkan spesifikasi lain sesuai produk -->
+        </ul>
+        <button class="close-spec">Tutup</button>
+    </div>
+
             </li>
 
                         <li class="item-a">
@@ -85,5 +103,9 @@
                 </div>
             </li>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
     <script src="{{ asset('js/produk2.js') }}" defer></script>
 </div>
+
+
+
