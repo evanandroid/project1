@@ -11,12 +11,12 @@ class ProductController extends Controller
     public function index()
     {
         $produks = Produk::latest()->paginate(10);
-        return view('admin.produks.index', compact('produks'));
+        return view('admin.index', compact('produks'));
     }
 
     public function create()
     {
-        return view('admin.produks.create');
+        return view('admin.create');
     }
 
     public function store(Request $request)
@@ -37,12 +37,12 @@ class ProductController extends Controller
 
         Produk::create($data);
 
-        return redirect()->route('produks.index')->with('success', 'Produk berhasil ditambahkan!');
+        return redirect()->route('produk.index')->with('success', 'Produk berhasil ditambahkan!');
     }
 
     public function edit(Produk $produk)
     {
-        return view('admin.produks.edit', compact('produk'));
+        return view('admin.edit', compact('produk'));
     }
 
     public function update(Request $request, Produk $produk)
@@ -63,12 +63,12 @@ class ProductController extends Controller
 
         $produk->update($data);
 
-        return redirect()->route('produks.index')->with('success', 'Produk berhasil diperbarui!');
+        return redirect()->route('produk.index')->with('success', 'Produk berhasil diperbarui!');
     }
 
     public function destroy(Produk $produk)
     {
         $produk->delete();
-        return redirect()->route('produks.index')->with('success', 'Produk berhasil dihapus!');
+        return redirect()->route('produk.index')->with('success', 'Produk berhasil dihapus!');
     }
 }

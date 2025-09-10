@@ -13,6 +13,9 @@
     <div class= "slide">
         <img src="{{ asset('image/iklan4.jpg') }}" alt="iklan4" class="h-full w-full object-cover rounded-2xl">
     </div>
+</div>
+<div class= "gambar">
+    <img src="{{ asset('iphone 16.png ') }}"
     
     <button id="prev" class="nav-button"  >&#10094;</button>
     <button id="next" class="nav-button"  >&#10095;</button>

@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <h1>Manajemen Produk</h1>
-    <a href="{{ route('produks.create') }}" class="btn btn-primary mb-3">Tambah Produk</a>
+    <a href="{{ route('admin.create') }}" class="btn btn-primary mb-3">Tambah Produk</a>
 
     @if(session('success'))
         <div class="alert alert-success">{{ session('success') }}</div>
@@ -31,8 +31,8 @@
                         @endif
                     </td>
                     <td>
-                        <a href="{{ route('produks.edit', $produk->id) }}" class="btn btn-warning btn-sm">Edit</a>
-                        <form action="{{ route('produks.destroy', $produk->id) }}" method="POST" class="d-inline">
+                        <a href="{{ route('admin.edit', $produk->id) }}" class="btn btn-warning btn-sm">Edit</a>
+                        <form action="{{ route('admin.destroy', $produk->id) }}" method="POST" class="d-inline">
                             @csrf @method('DELETE')
                             <button onclick="return confirm('Yakin hapus produk ini?')" class="btn btn-danger btn-sm">Hapus</button>
                         </form>

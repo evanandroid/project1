@@ -11,6 +11,6 @@ class KatalogController extends Controller
         // ambil semua produk, lalu kelompokkan berdasarkan merk
         $produks = Produk::all()->groupBy('merk');
 
-        return view('katalog', compact('produks'));
+        return view('katalog', compact('produk'));
     }
 }
